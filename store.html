@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeCart - Modern E-Commerce</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fafaf9;
+            color: #1c1917;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #ffffff;
+            border-bottom: 1px solid #e7e5e4;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #ea580c;
+            letter-spacing: -0.5px;
+        }
+
+        nav a {
+            color: #44403c;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ea580c;
+        }
+
+        .hero-shop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 8%;
+            background: linear-gradient(135deg, #ffedd5, #fed7aa);
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #7c2d12;
+            line-height: 1.1;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            color: #9a3412;
+            margin-bottom: 30px;
+            max-width: 450px;
+        }
+
+        .shop-btn {
+            background: #ea580c;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+        }
+
+        .product-grid {
+            padding: 80px 8%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e7e5e4;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .card-img {
+            height: 180px;
+            background: #f5f5f4;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a8a29e;
+            font-weight: bold;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            color: #ea580c;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">LuxeCart.</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Collections</a>
+            <a href="#">Cart (0)</a>
+        </nav>
+    </header>
+
+    <section class="hero-shop">
+        <div class="hero-text">
+            <h1>Discover Premium Lifestyle Products</h1>
+            <p>Upgrade your everyday essentials with our handpicked collection of modern, high-quality items designed for you.</p>
+            <a href="#" class="shop-btn">Shop Collection</a>
+        </div>
+    </section>
+
+    <section class="product-grid">
+        <h2 class="grid-title">Featured Products</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-img">Product Image</div>
+                <h3>Minimalist Watch</h3>
+                <div class="price">$149.00</div>
+            </div>
+            <div class="card">
+                <div class="card-img">Product Image</div>
+                <h3>Wireless Headphones</h3>
+                <div class="price">$220.00</div>
+            </div>
+            <div class="card">
+                <div class="card-img">Product Image</div>
+                <h3>Leather Backpack</h3>
+                <div class="price">$185.00</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+  </html>
+              
