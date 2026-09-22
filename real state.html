@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeSpaces - Real Estate Agency</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fafaf9;
+            color: #292524;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #ffffff;
+            border-bottom: 1px solid #e7e5e4;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0d9488;
+        }
+
+        nav a {
+            color: #57534e;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #0d9488;
+        }
+
+        .hero-realestate {
+            padding: 100px 8%;
+            text-align: center;
+            background: linear-gradient(135deg, #ccfbf1, #99f6e4);
+        }
+
+        .hero-realestate h1 {
+            font-size: 52px;
+            font-weight: 800;
+            color: #134e4a;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-realestate p {
+            font-size: 18px;
+            color: #115e59;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .property-btn {
+            background: #0d9488;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+        }
+
+        .properties-section {
+            padding: 80px 8%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .properties-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #134e4a;
+        }
+
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .property-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e7e5e4;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .property-img {
+            height: 180px;
+            background: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            font-weight: bold;
+        }
+
+        .property-details {
+            padding: 20px;
+        }
+
+        .property-details h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #1c1917;
+        }
+
+        .property-details p {
+            color: #78716c;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .property-price {
+            color: #0d9488;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">PrimeSpaces.</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Properties</a>
+            <a href="#">Agents</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero-realestate">
+        <h1>Find Your Dream Home With Confidence</h1>
+        <p>Explore exclusive luxury properties, modern apartments, and prime real estate listings tailored to your lifestyle.</p>
+        <a href="#" class="property-btn">Browse Properties</a>
+    </section>
+
+    <section class="properties-section">
+        <h2 class="properties-title">Featured Listings</h2>
+        <div class="properties-grid">
+            <div class="property-card">
+                <div class="property-img">Modern Villa Image</div>
+                <div class="property-details">
+                    <h3>Luxury Sunset Villa</h3>
+                    <p>4 Beds • 3 Baths • 3,200 sqft</p>
+                    <div class="property-price">$450,000</div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-img">Downtown Apartment Image</div>
+                <div class="property-details">
+                    <h3>Downtown Skyline Apartment</h3>
+                    <p>2 Beds • 2 Baths • 1,500 sqft</p>
+                    <div class="property-price">$280,000</div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-img">Suburban House Image</div>
+                <div class="property-details">
+                    <h3>Suburban Family House</h3>
+                    <p>3 Beds • 2 Baths • 2,200 sqft</p>
+                    <div class="property-price">$320,000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+                                </html>
+  
